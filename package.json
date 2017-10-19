@@ -1,0 +1,19 @@
+{
+  "name": "karuna-bot",
+  "version": "0.0.1",
+  "description": "Karuna Bot!",
+  "engines": {
+    "node": "8.6.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "botkit": "0.6.4",
+    "botkit-storage-mongo": "1.0.7",
+    "lodash": "4.17.4",
+    "moment": "2.19.1",
+    "mongoist": "1.4.3"
+  }
+}
