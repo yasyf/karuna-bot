@@ -160,7 +160,7 @@ async function ryg(bot, message) {
   ]))[0].score;
 
   const withFallback = other => other || first || current;
-  const dayStreak = other => moment(last.date).diff(withFallback(other).date, 'days');
+  const dayStreak = other => moment(withFallback(last).date).diff(withFallback(other).date, 'days');
   const streak = dayStreak(lastNonGreen);
   const drySpell = dayStreak(lastGreen);
 
